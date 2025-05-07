@@ -1,7 +1,6 @@
 import TerminalOverlay from '@/components/TerminalOverlay'
 import { Button } from '@/components/ui/button'
 import UserPrograms from '@/components/UserPrograms'
-import { SignedIn, SignedOut, SignIn, SignInButton, SignOutButton } from '@clerk/nextjs'
 import { ArrowRightIcon } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
