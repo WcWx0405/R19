@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { TiLocationArrow } from 'react-icons/ti'
 
-const BentoTile = ({ children, className= "" }) => {
+const BentoTile = ({ children, className= "", id }) => {
 
     const [transformStyle, setTransformStyle] = useState('');
 
@@ -28,7 +28,7 @@ const BentoTile = ({ children, className= "" }) => {
     }
 
     return (
-        <div className={className} ref={itemRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} style={{ transform: transformStyle }}>
+        <div id={id} className={className} ref={itemRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} style={{ transform: transformStyle }}>
             {children}
         </div>
     )
@@ -69,7 +69,7 @@ const Features = () => {
                 </p>
             </div>
 
-            <BentoTile className='border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]'>
+            <BentoTile id="radiant" className='border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]'>
                 <BentoCard 
                     src="videos/feature-1.mp4"
                     title="radiant"
